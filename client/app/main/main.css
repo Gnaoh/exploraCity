@@ -1,0 +1,74 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.navbar-brand {
+    font-size: 2.2em;
+    color: #fff;
+    font-family: aleo-regular;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-toggle {
+    color: #4393B9;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #2B3E51;
+}
+
+.nav > li > a:hover, .nav > li > a:hover {
+    color: #fff;
+}
+
+.main-menu {
+    transition: all 0.3s ease-in-out;
+    margin: 0.5em 0 0;
+    padding: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: aleo-regular;
+}
+
+.banner {
+    background:#2b3e51;
+    color:#fff;
+    margin:0;
+}   
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #4393B9;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
+
+.navbar-text {
+    margin-left: 15px;
+}
