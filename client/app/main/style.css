@@ -6,12 +6,13 @@
 }
 
 .main {
-  position:relative
+  position:relative;
 }
 
 @media only screen and (min-width: 37.5em) {
   .main {
-    margin-bottom:3em
+    margin-bottom:3em;
+
   }
 }
 
@@ -27,84 +28,3 @@
     min-height:3.1em
   }
 }
-
-.geocode_address {
-  float:left;
-  width:100%;
-  border-top:14px solid #2b3e51;
-  border-left:14px solid #2b3e51;
-  border-right:14px solid #2b3e51
-}
-
-@media only screen and (min-width: 37.5em) {
-  .geocode_address {
-    border:none;
-    max-width:20em;
-    position:absolute;
-    top:3.8em;
-    z-index:1;
-    left:17em;
-    box-shadow:0 0 4px rgba(0, 0, 0, 0.7)
-  }
-}
-
-/*.geocode_address input[type="text"] {
-    float:left;
-    width:80%;
-    margin:0;
-    font-size:1em
-}
-.geocode_address input[type="submit"] {
-    padding:0.7em;
-    float:left;
-    width:20%;
-    margin:0;
-        background: #4285f4;
-}*/
-
-/*address {
-    font-size:1em;
-    margin:0 0 1em;
-    line-height:1.4
-}*/
-
-#map-canvas {
-  height:260px;
-  border:14px solid #2b3e51
-}
-
-@media only screen and (min-width: 37.5em) {
-  #map-canvas {
-    position:relative;
-    margin-left:15em;
-    height:420px;
-    border:none
-  }
-}
-
-@media only screen and (min-width: 93.75em) {
-  #map-canvas {
-    height:600px
-  }
-}
-
-.addAventures {
-  position:relative;
-  padding:1em 0 0;
-  background:#2b3e51
-}
-
-@media only screen and (min-width: 37.5em) {
-  .addAventures {
-    width:15em;
-    min-height:29.65em;
-    position:absolute;
-    top:3.1em;
-    z-index:3;
-    padding:1em 0 2em;
-    border-right:1px solid rgba(86, 86, 86, 0.3);
-    border-bottom:1px solid rgba(86, 86, 86, 0.3)
-  }
-}
-
-

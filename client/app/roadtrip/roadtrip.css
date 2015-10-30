@@ -1,0 +1,25 @@
+.half {
+	height: 600px;
+	width: 50%;
+	float: left;
+}
+
+.half2 {
+ height: 600px;
+ width: 50%;
+ position: relative;
+ float: right;
+}
+
+.centerInput{
+    text-align: center;
+}
+
+td.adp-text {
+    text-align: center;
+}
+
+
+center.direction {
+	position: relative;
+}

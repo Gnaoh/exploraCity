@@ -1,0 +1,47 @@
+/*MAP*/
+
+#mapCanvas {
+  height:625x;
+  border:14px solid #2b3e51
+}
+
+@media only screen and (min-width: 37.5em) {
+  #mapCanvas {
+    position:relative;
+    margin-left:15em;
+    height:420px;
+    border:none
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  #mapCanvas {
+    height:600px
+  }
+}
+
+/*Adventure Sidebar*/
+
+.addAventures {
+  position:relative;
+  padding:1em 0 0;
+  background:#2b3e51;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .addAventures {
+    width:15em;
+    min-height:420px;
+    position:absolute;
+    top:3.1em;
+    z-index:3;
+    padding:1em 0 2em;
+    border-right:1px solid rgba(86, 86, 86, 0.3);
+    border-bottom:1px solid rgba(86, 86, 86, 0.3);
+    text-align: center;
+    color: #fff;
+  }
+}
+

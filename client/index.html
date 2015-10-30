@@ -22,8 +22,12 @@
       <link rel="stylesheet" href="app/account/login/login.css">
       <link rel="stylesheet" href="app/admin/admin.css">
       <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/explore/adventure/adventure.css">
+      <link rel="stylesheet" href="app/explore/index/index.css">
+      <link rel="stylesheet" href="app/explore/place/place.css">
       <link rel="stylesheet" href="app/main/main.css">
       <link rel="stylesheet" href="app/main/style.css">
+      <link rel="stylesheet" href="app/roadtrip/roadtrip.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
     <!-- endbuild -->
@@ -51,6 +55,9 @@
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+
+      <script src="https://maps.google.com/maps/api/js?sensor=false&libraries=places,geometry"></script>     
+
     <!-- build:js({client,node_modules}) app/vendor.js -->
       <!-- bower:js -->
       <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -59,12 +66,14 @@
       <script src="bower_components/angular-cookies/angular-cookies.js"></script>
       <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/lodash/lodash.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+      <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+      <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>      
       <!-- endbower -->
     <!-- endbuild -->
 
-        
         <!-- build:js({.tmp,client}) app/app.js -->
         
         <script src="app/app.js"></script>
@@ -76,10 +85,17 @@
           <script src="app/account/signup/signup.controller.js"></script>
           <script src="app/admin/admin.controller.js"></script>
           <script src="app/admin/admin.js"></script>
+          <script src="app/explore/adventure/adventure.controller.js"></script>
+          <script src="app/explore/adventure/adventure.js"></script>
+          <script src="app/explore/adventure/adventure.service.js"></script>
+          <script src="app/explore/index/index.controller.js"></script>
+          <script src="app/explore/index/index.js"></script>
+          <script src="app/explore/place/place.controller.js"></script>
+          <script src="app/explore/place/place.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
-          <script src="app/map/map.controller.js"></script>
-          <script src="app/map/map.js"></script>
+          <script src="app/roadtrip/roadtrip.controller.js"></script>
+          <script src="app/roadtrip/roadtrip.js"></script>
           <script src="components/auth/auth.service.js"></script>
           <script src="components/auth/user.service.js"></script>
           <script src="components/modal/modal.service.js"></script>

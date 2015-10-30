@@ -1,0 +1,40 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+  <section class="main">
+    <div class="heading">
+      <div class="wrapper"></div>
+    </div>
+	<div class="addAventures">
+		<h5>STARTING POINT</h5>
+		<input class="centerInput" places-auto-complete ng-model="origin" size=25 ng-disabled="drivingMode" style="color: black" /><br/>
+	  <h5>DESTINATION</h5>
+	  <input class="centerInput" places-auto-complete ng-model="destination" ng-disabled="drivingMode" size=25 style="color: black" /><br/><hr>
+	  <h5>SPEED<h5>
+		<input ng-model="drivingSpeed" type="range" ng-disabled="drivingMode"> {{drivingSpeed}} km / hour<br/><hr><br>
+		<button ng-click="drive()" style="width: 200px;font-size:1em" class="btn btn-primary">
+		 {{drivingMode ?  'Stop' : 'Start Adventure' }}
+		</button><br/>
+  </div>
+	<div class="wrap" id="mapCanvas">
+    	<map class="half" zoom="18" center="37.773972, -122.431297" tilt="45">
+	      <directions 
+	        draggable="true"
+	        panel="directions-panel"
+	        origin="{{origin}}"
+	        on-directions_changed="directionsChanged(evt)"
+	        destination="{{destination}}">
+	      </directions>
+      	<street-view-panorama container="streetview"></street-view-panorama>
+      	<marker ng-repeat="pos in markers" position="{{[pos.lat(), pos.lng()]}}"></marker>
+     </map>
+     <div  class="half2" id="streetview"></div> 
+  	<center class="direction">
+	  	<div class="container">
+			  <br style="clear:both" />
+			  <a href="" ng-click="showDirectionsPanel = !showDirectionsPanel">{{showDirectionsPanel ? 'Hide' : 'Show'}} Detailed Directions</a>
+			  <br style="clear:both" />
+			  <div id="directions-panel" ng-show="showDirectionsPanel" style="display:inline-block;width:90%" style="text-align: center"></div>
+		  </div>
+  	</center>
+
+	</div>
+  </section>

@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('exploraCityApp')
-  .controller('MapCtrl', function ($scope) {
+  .controller('PlaceCtrl', function ($scope) {
     $scope.message = 'Hello';
   });
